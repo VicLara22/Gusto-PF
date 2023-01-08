@@ -1,26 +1,27 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import './Nav.css'
 
-export default function Nav () {
+export default function Nav() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid all-show">
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
 
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mx-auto">
 
-            <li className="nav-item">
+            {/*  <li className="nav-item">
               <NavLink className="nav-link active" aria-current="page" to='/adminprovisorio'>ADMIN PROVISORIO</NavLink>
-            </li>
-
-            <li className="nav-item">
-              <NavLink className="nav-link active" aria-current="page" to='/pediya'>PEDI YA!</NavLink>
-            </li>
+            </li> */}
+            
+              <li className=" nav-item">
+                <NavLink className="nav-link active pedir" aria-current="page" to='/pediya'>PEDI YA!</NavLink>
+              </li>
             <li className="nav-item">
               <NavLink className="nav-link active" aria-current="page" to='/menu'>MENU</NavLink>
             </li>
@@ -28,7 +29,7 @@ export default function Nav () {
               <NavLink className="nav-link" to='/sucursales'>SUCURSALES</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to='/home'>HOME</NavLink>
+              <NavLink className="nav-link" to='/'>HOME</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to='/nosotros'>NOSOTROS</NavLink>
@@ -36,9 +37,9 @@ export default function Nav () {
             <li className="nav-item">
               <NavLink className="nav-link" to='/gustoburgerclub'>GUSTO BURGER CLUB</NavLink>
             </li>
-            <li className="nav-item">
+            {/*   <li className="nav-item">
               <NavLink className="nav-link" to='/trabajaaca'>TRABAJA ACA!</NavLink>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
